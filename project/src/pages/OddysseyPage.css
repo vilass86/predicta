@@ -1,0 +1,166 @@
+/* General Layout */
+.oddyssey-page {
+  padding: 20px;
+  background-color: #121212;
+  color: #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the entire content */
+}
+
+/* Top Bar */
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.how-it-works-link {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Horizontal Boxes */
+.horizontal-boxes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.box {
+  background-color: #222;
+  color: #ffdd57;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+}
+
+/* Main Content */
+.main-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.matches-list {
+  flex: 2;
+}
+
+.slip {
+  flex: 1;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Matches Section */
+.matches-header,
+.match-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr repeat(5, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.matches-header {
+  background-color: #333;
+  font-weight: bold;
+}
+
+.match-row {
+  background-color: #222;
+  margin-bottom: 10px;
+}
+
+.odd-box {
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.odd-box:hover {
+  background-color: #ffdd57;
+}
+
+.odd-box.selected {
+  background-color: #0fd97b;
+}
+
+/* Slip Section */
+.slip-header {
+  font-size: 1.5rem;
+  color: #ffdd57;
+}
+
+.slip-table {
+  margin-top: 15px;
+}
+
+.slip-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+.slip-header-row {
+  font-weight: bold;
+  color: #ffdd57;
+}
+
+.slip-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.amount-input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.submit-slip {
+  padding: 10px;
+  background-color: #0fd97b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Popup Modal */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-close {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffdd57;
+  cursor: pointer;
+}

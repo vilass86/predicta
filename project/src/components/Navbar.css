@@ -1,0 +1,87 @@
+/* General navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-left .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FF7F; /* Neon green color for branding */
+}
+
+.navbar-left .brand-name {
+    color: #FF00FF; /* Neon purple for brand differentiation */
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 5;
+    padding: 5;
+}
+
+.navbar-item {
+    margin-right: 80px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar-item a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+.navbar-item a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.create-btn {
+    background-color: #00e65b;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.create-btn:hover {
+    background-color: #00e65b;
+}
+
+/* Dropdown styling for categories (if needed) */
+.navbar-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #444;
+}
+
